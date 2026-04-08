@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
+import uvicorn
 
 app = FastAPI()
 
@@ -26,3 +27,11 @@ def step(req: ActionRequest):
         "done": True,
         "info": {}
     }
+
+# ✅ REQUIRED main function
+def main():
+    uvicorn.run(app, host="0.0.0.0", port=7860)
+
+# ✅ REQUIRED entry point
+if __name__ == "__main__":
+    main()
