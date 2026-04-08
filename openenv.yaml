@@ -1,0 +1,6 @@
+name: waste-rl-env
+version: 1.0
+
+endpoints:
+  reset: /reset
+  step: /step
