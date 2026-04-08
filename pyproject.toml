@@ -2,7 +2,7 @@
 name = "waste-rl-env"
 version = "0.1.0"
 description = "OpenEnv RL environment"
-authors = [{name = "Balaji"}]
+authors = [{ name = "Balaji" }]
 
 dependencies = [
     "fastapi",
@@ -12,7 +12,7 @@ dependencies = [
 ]
 
 [project.scripts]
-server = "server.app:app"
+server = "server.app:main"
 
 [build-system]
 requires = ["setuptools"]
