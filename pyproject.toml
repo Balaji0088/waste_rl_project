@@ -1,8 +1,19 @@
 [project]
 name = "waste-rl-env"
-version = "1.0.0"
-description = "OpenEnv waste segregation environment"
-requires-python = ">=3.8"
+version = "0.1.0"
+description = "OpenEnv RL environment"
+authors = [{name = "Balaji"}]
 
-[tool.openenv]
-entrypoint = "inference.py"
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "pydantic",
+    "openenv-core>=0.2.0"
+]
+
+[project.scripts]
+server = "server.app:app"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
