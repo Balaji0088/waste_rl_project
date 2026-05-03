@@ -1,6 +1,6 @@
 # Smart Waste Segregation RL Environment
 
-This project simulates a reinforcement learning environment where an agent (LLM) classifies waste.
+>This project simulates a reinforcement learning environment where an agent (LLM) classifies waste.
 
 # Features
 - RL environment (state, action, reward)
